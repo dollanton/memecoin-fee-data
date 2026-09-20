@@ -1,0 +1,71 @@
+{
+  "title": "Memecoin Trading Platform Fees 2026",
+  "snapshot_date": "2026-09-15",
+  "source": "https://memecointerminal.vercel.app/",
+  "sol_price_usd_assumption": 150,
+  "real_cost_note": "Round-trip real cost = (fee + priority + slippage) x 2 legs. Typical Solana memecoin round trip: 3.1% to 5%.",
+  "platforms": [
+    {
+      "name": "GMGN",
+      "standard_fee_pct": 1.0,
+      "referral_tier": "reduced via referral link",
+      "min_fee": null,
+      "cashback_net_pct": null,
+      "chains": ["Solana", "Ethereum", "Base", "BSC", "Tron", "Blast"],
+      "perps": false,
+      "custody": "depends on login method",
+      "copy_trading": "auto",
+      "security_screening": "GoPlus pre-trade"
+    },
+    {
+      "name": "Axiom",
+      "standard_fee_pct": 1.0,
+      "referral_tier": "20% off base fee, permanent",
+      "min_fee": null,
+      "cashback_net_pct": [0.95, 0.75],
+      "chains": ["Solana"],
+      "perps": true,
+      "perps_note": "Hyperliquid, up to 50x",
+      "custody": "non-custodial",
+      "copy_trading": "manual wallet tracking",
+      "security_screening": "risk signals"
+    },
+    {
+      "name": "FOMO",
+      "standard_fee_pct": 0.5,
+      "referral_tier": "10% off trading fees",
+      "min_fee_usd": 0.95,
+      "cashback_net_pct": null,
+      "chains": ["Solana", "Base", "BNB Chain", "Ethereum", "Monad", "Robinhood Chain"],
+      "perps": false,
+      "custody": "self-custodial",
+      "copy_trading": "social copy",
+      "security_screening": "basic"
+    },
+    {
+      "name": "Trojan",
+      "standard_fee_pct": 1.0,
+      "referral_tier_pct": 0.9,
+      "min_fee": null,
+      "cashback_net_pct": null,
+      "chains": ["Solana"],
+      "perps": false,
+      "custody": "bot wallet, key exportable",
+      "copy_trading": "yes",
+      "security_screening": "none"
+    },
+    {
+      "name": "GoodCrypto",
+      "standard_fee_pct": null,
+      "fee_note": "exchange-level fees on connected venues (Hyperliquid perps around 0.02% to 0.05% per leg)",
+      "referral_tier": "GOOD token discounts",
+      "min_fee": null,
+      "cashback_net_pct": null,
+      "chains": ["Hyperliquid", "DEX venues"],
+      "perps": true,
+      "custody": "non-custodial",
+      "copy_trading": "no",
+      "security_screening": "none"
+    }
+  ]
+}

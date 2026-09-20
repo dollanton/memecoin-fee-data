@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memecoin Trading Platform Fees 2026: A Structured Dataset</title>
+<meta name="description" content="Structured dataset of memecoin trading platform fees for 2026: GMGN, Axiom, FOMO, Trojan, GoodCrypto. Standard fees, referral tiers, cashback, chains and the real round-trip cost math.">
+<style>
+:root{--bg:#070b12;--card:#0e1522;--border:#1c2637;--txt:#e8edf5;--muted:#93a3ba;--accent:#22e08f;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.65;font-size:16px}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{border-bottom:1px solid var(--border);padding:44px 0 30px}
+h1{font-size:28px;line-height:1.25;margin-bottom:12px}
+.sub{color:var(--muted)}
+main{padding:34px 0}
+h2{font-size:21px;margin:30px 0 12px}
+p{margin-bottom:14px}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--border);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th{background:#0b111c;text-align:left;padding:10px 10px;border-bottom:1px solid var(--border);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+td{padding:10px 10px;border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:none}
+code{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:2px 7px;font-size:13.5px;color:var(--accent)}
+.dl{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0}
+.btn{display:inline-block;background:var(--card);border:1px solid var(--accent);color:var(--accent);font-weight:700;padding:9px 16px;border-radius:8px;font-size:14px}
+.btn:hover{background:rgba(34,224,143,.08);text-decoration:none}
+.note{background:rgba(34,224,143,.05);border:1px solid rgba(34,224,143,.3);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:14.5px}
+footer{border-top:1px solid var(--border);padding:26px 0 50px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Memecoin Trading Platform Fees 2026: A Structured Dataset</h1>
+    <p class="sub">Standard fees, referral tiers, cashback and chain coverage for the five platforms traders actually use. Data as JSON and CSV, free to use.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h2>The dataset</h2>
+    <p>All figures verified against official platform documentation, September 2026. Where a referral tier exists, the rate assumes signup through the links on <a href="https://memecointerminal.vercel.app/">Memecoin Terminal</a>, which reduce fees below the standard schedule.</p>
+
+    <div class="dl">
+      <a class="btn" href="fee-data.json">fee-data.json</a>
+      <a class="btn" href="fee-data.csv">fee-data.csv</a>
+      <a class="btn" href="https://github.com/dollanton/memecoin-fee-data">Repo</a>
+    </div>
+
+    <div class="tbl">
+      <table>
+        <tr><th>Platform</th><th>Standard fee</th><th>Referral tier</th><th>Min fee</th><th>Cashback net</th><th>Chains</th><th>Perps</th><th>Security screening</th></tr>
+        <tr><td><strong>GMGN</strong></td><td>1% flat</td><td>reduced</td><td>none</td><td>n/a</td><td>Solana, ETH, Base, BSC, Tron, Blast +</td><td>no</td><td>GoPlus pre-trade</td></tr>
+        <tr><td><strong>Axiom</strong></td><td>1% base</td><td>+20% off base</td><td>none</td><td>0.95% to 0.75%</td><td>Solana (+ Hyperliquid perps)</td><td>yes, 50x</td><td>risk signals</td></tr>
+        <tr><td><strong>FOMO</strong></td><td>0.5% flat</td><td>+10% off</td><td>~$0.95</td><td>n/a</td><td>Solana, Base, BNB, ETH, Monad, Robinhood Chain</td><td>no</td><td>basic</td></tr>
+        <tr><td><strong>Trojan</strong></td><td>1%</td><td>0.9%</td><td>none</td><td>n/a</td><td>Solana</td><td>no</td><td>none</td></tr>
+        <tr><td><strong>GoodCrypto</strong></td><td>exchange fees</td><td>GOOD discounts</td><td>venue-dependent</td><td>n/a</td><td>Hyperliquid, DEX venues</td><td>yes</td><td>none</td></tr>
+      </table>
+    </div>
+
+    <h2>The number the fee tables hide</h2>
+    <p>A headline fee is charged per leg, and priority fees plus slippage come on top. Worked example, 1 SOL round trip at ~$150 SOL: 1% platform fee (0.02 SOL) plus priority (0.001 to 0.010 SOL) plus 0.5% to 1% slippage (0.010 to 0.020 SOL) totals <strong>0.031 to 0.050 SOL, or 3.1% to 5%</strong> of the trade. The advertised 1% is not the real cost.</p>
+    <p>Plug your own numbers into the <a href="https://memecointerminal.vercel.app/calculator/">trade cost calculator</a>, or read the full math in the <a href="https://memecointerminal.vercel.app/blog/memecoin-trading-fees.html">fee guide</a>.</p>
+
+    <div class="note">
+      <strong>Full comparison:</strong> this dataset is the fee layer of a larger comparison covering security tools, custody, copy trading and real-world trade-offs for all five platforms. See <a href="https://memecointerminal.vercel.app/">Memecoin Terminal: Best Memecoin Trading Platforms 2026</a>.
+    </div>
+
+    <h2>Usage</h2>
+    <p>Free for any use, including research, articles and tools. Attribution appreciated, not required. If you build on this data, a link to <code>memecointerminal.vercel.app</code> helps keep the dataset maintained.</p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Memecoin Terminal Review. Data snapshot: September 2026. Verify live schedules in-app before trading. Not financial advice.</p>
+  </div>
+</footer>
+
+</body>
+</html>

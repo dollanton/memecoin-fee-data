@@ -1,0 +1,6 @@
+platform,standard_fee_pct,referral_tier,min_fee_usd,cashback_net_min_pct,chains,perps,security_screening,custody
+GMGN,1.0,"reduced via referral link",,"","Solana;Ethereum;Base;BSC;Tron;Blast",no,"GoPlus pre-trade","depends on login method"
+Axiom,1.0,"20% off base fee, permanent",,0.75,Solana,yes (50x Hyperliquid),"risk signals",non-custodial
+FOMO,0.5,"10% off trading fees",0.95,,"Solana;Base;BNB Chain;Ethereum;Monad;Robinhood Chain",no,basic,self-custodial
+Trojan,1.0,"0.9% via referral",,,Solana,no,none,"bot wallet, key exportable"
+GoodCrypto,,"GOOD token discounts",,,"Hyperliquid;DEX venues",yes,none,non-custodial
